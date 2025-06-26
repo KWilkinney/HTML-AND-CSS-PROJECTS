@@ -1,1 +1,6 @@
-alert("The JavaScript ran successfully with the html code");
+function My_First_Function() {
+	var String = "Kiss me, I'm Irish!";
+	var result = String.fontcolor("blue");
+	document.getElementByID("Irish").innerHTML =
+	result;
+	}

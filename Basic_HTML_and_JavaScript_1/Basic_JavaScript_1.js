@@ -1,0 +1,1 @@
+alert("The JavaScript ran successfully with the html code");

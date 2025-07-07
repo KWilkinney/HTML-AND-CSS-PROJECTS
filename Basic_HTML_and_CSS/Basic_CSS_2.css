@@ -3,3 +3,13 @@ p {
 	background: black;
 	font-weight: bold;
 	text-align: center;
+	text-shadow: -10px -10px 2px gray;
+}
+
+ol {
+	list-style-type: upper-roman;
+}
+
+ul {
+	list-style-type: square;
+}

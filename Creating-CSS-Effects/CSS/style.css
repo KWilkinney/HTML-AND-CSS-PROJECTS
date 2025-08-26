@@ -197,6 +197,11 @@ img{
 
 /*Typography Enhancement using @font-face*/
 @font-face{
-    font-family: MyOwnFont;
-    src: url("")
+    font-family: 'SansationLight';
+	src: local('SansationLight'), url('/Fonts/SansationLight/SansationLight.woff') format('woff'); 
+    /*font downloaded from FontsForWeb.com*/
+}
+
+.fontsforweb_fontid_423{
+    font-family: 'SansationLight' !important;
 }

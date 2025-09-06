@@ -123,6 +123,7 @@ img{
 /*Triggers the hover effect of the overlay on Image 1 with a 60% opacity*/
 .overlay:hover{
     opacity: 0.6;
+    transform: rotate(90deg);
 }
 
 /*IMAGE TWO*/

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="author" content="Kyle W.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/one_page_website.css">
+    <link rel="stylesheet" href="CSS/one_page_website.css">
     <title>Come to Know Christ!</title>
 </head>
 <body>
@@ -43,13 +43,13 @@
         <h2>If you're interested in learning more and have questions, submit this form:</h2>
         <form action="" method="post">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" autocomplete="name" name="name" aria-required="true" required>
             <br>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" autocomplete="email" name="email" aria-required="true" required>
             <br>
             <label for="inquery">If you have any specific questions you'd like answered, write them here:</label>
-            <textarea id="inquery" name="inquery" required></textarea>
+            <textarea id="inquery" name="inquery" aria-required="true" required></textarea>
             <br>
             <label for="permission">May we contact you via the email you provided above?</label>
             <input type="checkbox" id="permission" name="permission" value="yes">

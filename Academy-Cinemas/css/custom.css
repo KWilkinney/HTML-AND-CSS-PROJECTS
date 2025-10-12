@@ -1,5 +1,8 @@
 /*Font Passion One from fonts.google.com*/
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital@0;1&family=Passion+One&family=Sacramento&display=swap');
+/*Font Yesteryear from fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital@0;1&family=Passion+One&family=Sacramento&family=Yesteryear&display=swap');
+
 
 /*Creates global CSS variables that can be reused throughout the file*/
 :root{
@@ -10,11 +13,14 @@
     --accent-color: rgb(36, 36, 36);
     --accent-text-color: rgb(255, 255, 255);
     --main-font-family: 'Passion One', cursive;
+    --secondary-font-family: 'Yesteryear', cursive;
 }
 
 body{
     background-image: url(../images/theater-curtains.jpg);
-    background-size: 100%;
+    background-size: 100% 120%; /*100% horizontally and 120% vertically*/
+    background-attachment: fixed;
+    overflow-x: hidden; /*Removes left to right scroll bar*/
 }
 
 /*NAVBAR*/
@@ -81,4 +87,59 @@ body{
 .dropdown-item:hover, .dropdown-item:focus{
     color: var(--accent-text-color);
     background-color: var(--main-color);
+}
+
+/*MOBILE MENU*/
+
+.navbar-toggler{
+    border: none; /*Removes the thin border around the hamburger icon*/
+    transition: 0.5s ease;
+}
+
+.navbar-toggler:focus{
+    box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width) rgb(98, 0, 0);
+    transition: 0.5s ease;
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%28237, 192, 3%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/*HEADER IMAGE*/
+
+#header-image{
+    padding-top: 150px;
+}
+
+/*GENERAL STYLING*/
+
+h1, h3, h4, p{
+    cursor: default; /*Changes the cursor back to the default arrow instead of a text cursor when hovering your mouse over text*/
+}
+
+h1{
+    font-family: var(--main-font-family);
+    color: var(--main-color-accent);
+    text-shadow: 0 0 10px rgb(0, 0, 0,);
+    text-align: center;
+    font-size: 100px;
+}
+
+h3{
+    font-family: var(--main-font-family);
+    font-size: 50px;
+}
+
+h4{
+    font-family: var(--secondary-font-family)
+}
+
+b{
+    font-weight: 600;
+}
+
+/*MOVIE CARDS*/
+
+.container{
+    padding: 100px;
 }
